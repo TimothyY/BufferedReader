@@ -21,9 +21,9 @@ public class Main {
 	public static void main(String[] args) { // arg[0] = num of characters to be processed at once. arg[1] = file name. 
 //		txtURI = args[0];
 		txtURI = "C:\\Java AhoCorasick\\Asset\\red1.3.txt";
-		output_Home = "C:\\Java AhoCorasick\\2Char results\\";
-		output_processTimeRead1 = output_Home+"2CharConvert_1.txt";
-		output_processTimeRead2 = output_Home+"2CharConvert_2.txt";
+		output_Home = "C:\\Java AhoCorasick\\BufferedReader results\\";
+		output_processTimeRead1 = output_Home+"BufferedReader_Results 1.txt";
+		output_processTimeRead2 = output_Home+"BufferedReader_Results 2.txt";
 		
 		switch (args[0]) {
 		case "1":
