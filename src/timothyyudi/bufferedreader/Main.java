@@ -24,8 +24,8 @@ public class Main {
 		output_Home = "C:\\Java AhoCorasick\\BufferedReader results\\";
 		output_processTimeRead1 = output_Home+"BufferedReader_Results 1.txt";
 		output_processTimeRead2 = output_Home+"BufferedReader_Results 2.txt";
-		output_processTimeRead1 = output_Home+"BufferedReader_Results 3.txt";
-		output_processTimeRead2 = output_Home+"BufferedReader_Results 4.txt";
+		output_processTimeRead3 = output_Home+"BufferedReader_Results 3.txt";
+		output_processTimeRead4 = output_Home+"BufferedReader_Results 4.txt";
 		
 		switch (args[0]) {
 		case "1":
@@ -34,7 +34,6 @@ public class Main {
 				File file = new File(txtURI);
 				FileReader fileReader = new FileReader(file);
 				BufferedReader bufferedReader = new BufferedReader(fileReader);
-				bufferedReader.readLine();
 				while ((intBuf = bufferedReader.read()) != -1) {
 					sBuf = String.valueOf((char)intBuf);
 //					System.out.println(sBuf);
@@ -64,7 +63,6 @@ public class Main {
 				File file = new File(txtURI);
 				FileReader fileReader = new FileReader(file);
 				BufferedReader bufferedReader = new BufferedReader(fileReader);
-				bufferedReader.readLine();
 				while (bufferedReader.read(cBuf2, 0, 2) != -1) {
 					sBuf = String.copyValueOf(cBuf2);
 //					System.out.println(sBuf);
@@ -94,7 +92,6 @@ public class Main {
 				File file = new File(txtURI);
 				FileReader fileReader = new FileReader(file);
 				BufferedReader bufferedReader = new BufferedReader(fileReader);
-				bufferedReader.readLine();
 				while (bufferedReader.read(cBuf3, 0, 3) != -1) {
 					sBuf = String.copyValueOf(cBuf3);
 //					System.out.println(sBuf);
@@ -124,7 +121,6 @@ public class Main {
 				File file = new File(txtURI);
 				FileReader fileReader = new FileReader(file);
 				BufferedReader bufferedReader = new BufferedReader(fileReader);
-				bufferedReader.readLine();
 				while (bufferedReader.read(cBuf4, 0, 4) != -1) {
 					sBuf = String.copyValueOf(cBuf4);
 //					System.out.println(sBuf);
